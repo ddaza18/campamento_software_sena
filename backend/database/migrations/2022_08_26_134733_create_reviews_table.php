@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('title');
             $table->text('text');
             $table->float('rating', 2, 1);
+            $table->foreingId('user_id')->constrained();
             $table->timestamps();
         });
     }
