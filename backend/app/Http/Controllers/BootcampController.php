@@ -54,11 +54,11 @@ class BootcampController extends Controller
     public function update(Request $request, $id)
     {
         //1. encontrar el bootcamp por id
-        $b = botcamp::find($id);
+        $c = botcamp::find($id);
         //2. actualizarlo 
-        $b->update($request->all());
+        $c->update($request->all());
         //3. enviar response con bootcamp actualizado
-        return $b;
+        return $c;
     }
 
     /**
